@@ -10,10 +10,10 @@ embeddings = download_hugging_face_embeddings()
 
 import os
 from chromadb.config import Settings
-from langchain_community.vectorstores import Chroma
+from langchain_chroma import Chroma
 
 # Ensure correct absolute path (use forward slashes)
-persist_path = os.path.abspath("C:/Users/Sures/jupyter_programs/Open-AI/Medical-Chatbot-Using-Llama2/chroma_db")
+persist_path = "db"
 
 # Initialize Chroma with persistence enabled
 vectordb = Chroma.from_documents(

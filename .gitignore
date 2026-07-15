@@ -1,0 +1,9 @@
+.venv/
+artifacts/
+data/
+db/
+model/
+__pycache__/
+*.pyc
+.gemini/
+.DS_Store
